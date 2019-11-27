@@ -1,0 +1,44 @@
+@import './default.scss';
+@import './components/nav.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.base {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url('../images/abstract-2.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  min-height: 200vh;
+}
+
+.foreground-container {
+  position: relative;
+  z-index: 1;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  background: rgba(42, 44, 51, 0.7);
+  padding: 3rem;
+  margin: 3rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .about {
+    max-width: 60vw;
+  }
+}
