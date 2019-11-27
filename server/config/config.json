@@ -1,0 +1,12 @@
+{
+  "test":{
+    "PORT": 8080,
+    "ENVIRONMENT": "test",
+    "MONGODB_URI": "mongodb://localhost:27017/banzTracksTest"
+  },
+  "development": {
+    "PORT": 8080,
+    "ENVIRONMENT": "development",
+    "MONGODB_URI": "mongodb://localhost:27017/banzTracksDev"
+  }
+}
