@@ -1,5 +1,8 @@
+@import './_settings.scss';
 @import './default.scss';
 @import './components/nav.scss';
+@import './components/playlist.scss';
+
 
 * {
   margin: 0;
@@ -12,7 +15,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-image: url('../images/abstract-2.jpg');
+  background-image: url('../images/concert.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -29,6 +32,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 100vw;
 }
 
 .about {
