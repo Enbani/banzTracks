@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import axios from 'axios';
 
 // import components
 import { Nav, About } from './common';
+import { getPlaylists } from '../actions';
+
 
 class Main extends Component {
+  componentDidMount(){
+    this.props.getPlaylists();
+  }
 
   render(){
     return(
@@ -19,7 +26,7 @@ class Main extends Component {
             aboutStyle='section about'
             aboutTitle='Welcome to the Sound Lounge'
             aboutContent='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra orci sagittis eu volutpat odio facilisis. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Tempor orci eu lobortis elementum nibh tellus molestie nunc. Amet massa vitae tortor condimentum lacinia quis vel eros.'
-            />
+          />
         </div>
       </div>
 
@@ -27,4 +34,14 @@ class Main extends Component {
   }
 };
 
-export default Main;
+const mapStateToProps = (state) => {
+  return {
+    playlists: state.playlists
+  }
+}
+
+export default connect(mapStateToProps,{
+  getPlaylists
+})(Main);
+
+// export default Main;
