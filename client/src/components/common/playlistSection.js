@@ -2,23 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Heading, PlaylistItem } from './';
 
-// const PlaylistSection = (props) => {
-//   return(
-//     <div className={ props.containerStyle}>
-//       <Heading
-//         headingStyle={ props.headingStyle }
-//         textStyle={ props.textStyle }
-//         headingTitle={ props.headingTitle }
-//         />
-//       <PlaylistItem
-//          spotifyId={ props.spotifyId }
-//          playlistWidth={ props.playlistWidth }
-//          playlistHeight={ props.playlistHeight }
-//         />
-//     </div>
-//   )
-// };
-
 class PlaylistSection extends Component {
 
   componentDidUpdate() {
@@ -53,6 +36,8 @@ class PlaylistSection extends Component {
           headingStyle={ this.props.headingStyle }
           textStyle={ this.props.textStyle }
           headingTitle={ this.props.headingTitle }
+          headingContent={ this.props.headingContent }
+          contentStyle={ this.props.contentStyle }
           />
         {this.generateList()}
       </div>

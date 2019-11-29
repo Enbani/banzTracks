@@ -24,7 +24,9 @@ class AllPlaylists extends Component {
             headingStyle={ this.props.headingStyle }
             textStyle={ this.props.textStyle }
             headingTitle={ item.series }
+            headingContent={ item.description }
             playlistData = { item.playlists }
+            contentStyle={ this.props.contentStyle }
             />
         )
       })

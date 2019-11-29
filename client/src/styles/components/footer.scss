@@ -1,14 +1,14 @@
-.nav-container {
+.footer-container {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 1em 1em 1em 1em;
   width: 100%;
   height: 10vh;
   background-color: $header-color;
 }
 
-.nav-title {
-  font-style: oblique;
-  font-family: $font-1;
+.footer-text {
+  font-family: $font-2;
   color: $text-color;
 }

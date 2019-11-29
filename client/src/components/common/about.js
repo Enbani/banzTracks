@@ -1,14 +1,16 @@
 import React from 'react';
+import { FollowButton } from './';
 
 const About = (props) => {
   return(
     <div className={ props.aboutStyle }>
-      <h2>
+      <h2 className={ props.titleStyle }>
         { props.aboutTitle }
       </h2>
-      <p>
+      <p className={ props.contentStyle}>
         { props.aboutContent }
       </p>
+      <FollowButton/>
     </div>
   )
 }
